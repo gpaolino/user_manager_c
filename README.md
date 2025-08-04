@@ -11,7 +11,10 @@ Gestore di utenti base con struttura modulare in C.
 
 ```bash
 make
+```
 
 ## Esecuzione
 
+```bash
 ./build/user_manager
+```
