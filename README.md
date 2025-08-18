@@ -1,19 +1,19 @@
 # User Manager (in C)
 
-Gestore di utenti base con struttura modulare in C.
+Basic user manager with modular structure in C.
 
-## 📦 Requisiti
+## 📦 Requirements
 
-- GCC o compatibile
+- GCC or compatible
 - make
 
-## 🛠 Compilazione
+## 🛠 Compilation
 
 ```bash
 make
 ```
 
-## Esecuzione
+## Execution
 
 ```bash
 ./build/user_manager

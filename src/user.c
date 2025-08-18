@@ -7,7 +7,7 @@ static int user_count = 0;
 
 void add_user(int id, const char *name) {
     if (user_count >= MAX_USERS) {
-        printf("Errore: raggiunto numero massimo di utenti.\n");
+        printf("Error: Maximum number of users reached.\n");
         return;
     }
 
@@ -15,7 +15,7 @@ void add_user(int id, const char *name) {
     strncpy(users[user_count].name, name, NAME_LENGTH - 1);
     users[user_count].name[NAME_LENGTH - 1] = '\0';
     user_count++;
-    printf("Utente aggiunto con successo.\n");
+    printf("User added successfully.\n");
 }
 
 User* find_user(int id) {
@@ -28,8 +28,8 @@ User* find_user(int id) {
 }
 
 void print_all_users(void) {
-    printf("\n--- Elenco utenti ---\n");
+    printf("\n--- User list ---\n");
     for (int i = 0; i < user_count; ++i) {
-        printf("ID: %d, Nome: %s\n", users[i].id, users[i].name);
+        printf("ID: %d, Name: %s\n", users[i].id, users[i].name);
     }
 }
